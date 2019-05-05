@@ -1,0 +1,40 @@
+buildscript {
+    ext {
+        springBootVersion = '2.1.4.RELEASE'
+        springCloudVersion = '2.1.1.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+        maven { url 'https://repo.spring.io/libs-snapshot' }
+        maven {
+            url 'https://repo.spring.io/libs-milestone'
+        }
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+group = 'com.jarvis'
+version = '1.0.0-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.spring.io/milestone' }
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
+    implementation("org.springframework.boot:spring-boot-starter-data-redis:${springBootVersion}")
+    implementation("org.springframework.boot:spring-boot-starter-data-redis:${springBootVersion}")
+    implementation("org.springframework.cloud:spring-cloud-starter-openfeign:${springCloudVersion}")
+    implementation("org.springframework.retry:spring-retry:1.2.2.RELEASE")
+    implementation("org.springframework.cloud:spring-cloud-starter-sleuth:${springCloudVersion}")
+    implementation("redis.clients:jedis:3.0.1")
+    implementation("com.google.guava:guava:27.1-jre")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
+    compileOnly 'org.projectlombok:lombok:1.18.4'
+    annotationProcessor 'org.projectlombok:lombok:1.18.4'
+}
+
