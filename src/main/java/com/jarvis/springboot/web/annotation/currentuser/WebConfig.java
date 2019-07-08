@@ -1,4 +1,4 @@
-package com.jarvis.springboot.annotation.currentuser;
+package com.jarvis.springboot.web.annotation.currentuser;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;

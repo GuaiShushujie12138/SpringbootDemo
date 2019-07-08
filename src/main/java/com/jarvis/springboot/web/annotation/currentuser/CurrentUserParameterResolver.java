@@ -1,4 +1,4 @@
-package com.jarvis.springboot.annotation.currentuser;
+package com.jarvis.springboot.web.annotation.currentuser;
 
 import org.springframework.core.MethodParameter;
 import org.springframework.web.bind.support.WebDataBinderFactory;

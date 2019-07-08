@@ -1,4 +1,4 @@
-package com.jarvis.springboot.annotation.currentuser;
+package com.jarvis.springboot.web.annotation.currentuser;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -93,8 +93,8 @@ public class Q001_TwoSum {
         for (int i = 0; i < nums.length; i++) {
             int value = target - nums[i];
             if (arrayMap.containsKey(value)) {
-                result[0] = i;
-                result[1] = arrayMap.get(target - nums[i]);
+                result[0] = arrayMap.get(target - nums[i]);
+                result[1] = i;
                 break;
             }
 
