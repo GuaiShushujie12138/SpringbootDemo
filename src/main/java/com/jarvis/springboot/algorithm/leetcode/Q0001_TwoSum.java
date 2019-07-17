@@ -18,13 +18,13 @@ import java.util.Map;
  * 所以返回 [0, 1]
  *
  */
-public class Q001_TwoSum {
+public class Q0001_TwoSum {
 
     public static void main(String[] args) {
         int nums[] = {1, 3, 5, 0, -2, 4, 6, 3};
-        System.out.println("result:" + Arrays.toString(new Q001_TwoSum().twoSum(nums, 6)));
-        System.out.println("result:" + Arrays.toString(new Q001_TwoSum().twoSumByOneHash(nums, 6)));
-        System.out.println("result:" + Arrays.toString(new Q001_TwoSum().twoSumByDoubleHash(nums, 6)));
+        System.out.println("result:" + Arrays.toString(new Q0001_TwoSum().twoSum(nums, 6)));
+        System.out.println("result:" + Arrays.toString(new Q0001_TwoSum().twoSumByOneHash(nums, 6)));
+        System.out.println("result:" + Arrays.toString(new Q0001_TwoSum().twoSumByDoubleHash(nums, 6)));
     }
 
     /**
