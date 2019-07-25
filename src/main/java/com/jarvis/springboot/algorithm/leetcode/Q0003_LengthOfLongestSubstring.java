@@ -38,9 +38,11 @@ public class Q0003_LengthOfLongestSubstring {
             char c = s.charAt(end);
 
             if (map.containsKey(c)) {
+                // 不能单纯的使用 map.get(c), 因为 start 可能比他大了
                 start = Math.max(start, map.get(c));
             }
 
+            // 为了上面的 Math.max(start, map.get(c))
             result = Math.max(result, end - start + 1);
 
             map.put(c, end + 1);
