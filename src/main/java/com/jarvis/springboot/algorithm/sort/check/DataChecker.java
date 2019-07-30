@@ -1,6 +1,6 @@
 package com.jarvis.springboot.algorithm.sort.check;
 
-import com.jarvis.springboot.algorithm.sort.InsertSort;
+import com.jarvis.springboot.algorithm.sort.QuickSort;
 import com.jarvis.springboot.algorithm.sort.Sort;
 import lombok.extern.slf4j.Slf4j;
 
@@ -13,7 +13,7 @@ public class DataChecker {
         int[] array = initArray();
         int[] array2 = copyArray(array);
 
-        Sort sort = new InsertSort();
+        Sort sort = new QuickSort();
 
         log.info("排序前:");
         sort.printArray(array);
