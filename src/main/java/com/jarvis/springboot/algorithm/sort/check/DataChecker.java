@@ -1,6 +1,6 @@
 package com.jarvis.springboot.algorithm.sort.check;
 
-import com.jarvis.springboot.algorithm.sort.ShellSort;
+import com.jarvis.springboot.algorithm.sort.CardinalitySort;
 import com.jarvis.springboot.algorithm.sort.Sort;
 import lombok.extern.slf4j.Slf4j;
 
@@ -13,7 +13,7 @@ public class DataChecker {
         int[] array = initArray();
         int[] array2 = copyArray(array);
 
-        Sort sort = new ShellSort();
+        Sort sort = new CardinalitySort();
 
         log.info("排序前:");
         sort.printArray(array);
@@ -43,7 +43,7 @@ public class DataChecker {
         int[] array = new int[100];
 
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * 100);
+            array[i] = (int) (Math.random() * 99) + 1;
         }
 
         return array;
