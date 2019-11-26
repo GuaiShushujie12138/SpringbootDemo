@@ -107,7 +107,7 @@ public class Q0019_RemoveNthFromEnd {
     }
 
     @ToString
-    static class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
 
