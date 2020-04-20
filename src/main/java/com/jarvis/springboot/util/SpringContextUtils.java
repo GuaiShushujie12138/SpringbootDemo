@@ -17,9 +17,6 @@ import java.lang.annotation.Annotation;
 import java.util.Locale;
 import java.util.Map;
 
-/**
- * jack
- */
 public class SpringContextUtils implements ApplicationContextAware {
 
     private static ApplicationContext context;
